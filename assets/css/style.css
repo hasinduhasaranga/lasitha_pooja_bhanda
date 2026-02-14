@@ -3297,7 +3297,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 .hero__slider--bg {
-  background: url(../img/atapirikara.jpg);
+  background: url(../img/pirikara_collection.webp);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center !important;
@@ -3327,7 +3327,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 .hero__slider--bg.slider2 {
-  background: url(../img/images_2.jpeg);
+  background: url(../img/atapirikara.jpg);
 }
 .hero__slider--bg.slider3 {
   background: url(../img/Atapirikara_with_Challenger_Siwura.webp);
@@ -3863,6 +3863,11 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
   overflow: hidden;
   line-height: 1;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
 }
 .product__secondary--img {
   position: absolute;
@@ -3905,7 +3910,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .product__items--img {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
 }
 .product__items--action {
   position: absolute;
@@ -5485,6 +5492,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .testimonial__banner--thumbnail {
   overflow: hidden;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 1199px) {
   .testimonial__banner--thumbnail {
@@ -5494,6 +5504,11 @@ input[type="number"]::-webkit-outer-spin-button {
 .testimonial__banner--thumbnail:hover .testimonial__banner--thumbnail__img {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
+}
+.testimonial__banner--thumbnail__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .testimonial__items--topbar {
   margin-bottom: 1.7rem;
